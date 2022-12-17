@@ -3,6 +3,7 @@
 ## Application features
 
 - [ ] Migrate web version to electron application
-- [ ] Creature creation
+- [ ] Setup database
+- [ ] Creature creation and storing
 - [ ] DnD battle tracker
 - [ ] Bestiary

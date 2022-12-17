@@ -1,0 +1,24 @@
+.imageLoader {
+  @apply flex flex-col items-center;
+}
+
+.row {
+  @apply flex items-center mt-4 w-full;
+}
+
+.row > * {
+  @apply basis-1/2;
+}
+
+.row > *:nth-child(1) {
+  @apply mr-[5%]
+}
+
+.imageWrapper {
+  @apply relative w-[250px] h-[250px] mb-2.5;
+}
+
+.image {
+  @apply absolute object-cover top-0 left-0 w-full h-full rounded-full;
+  border: 4px solid black;
+}
