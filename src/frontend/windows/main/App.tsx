@@ -1,13 +1,22 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import styles from "./App.module.css";
-import Sidebar from "./components/layout/sidebar/Sidebar";
-import { routes } from "./contants/routes";
+import styled from '@emotion/styled';
+import { Route, Routes } from 'react-router-dom';
+import Sidebar from './components/layout/sidebar/Sidebar';
+import { routes } from './contants/routes';
+
+const S_ApplicationWrapper = styled.div`
+  margin: 0 auto;
+  max-width: ${(props) => props.theme.screens.xl2};
+`;
+
+const S_FlexWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 function App() {
   return (
-    <div className={styles.wrapper}>
-      <div className="flex flex-col md:flex-row">
+    <S_ApplicationWrapper>
+      <S_FlexWrapper>
         <Sidebar />
         <Routes>
           {routes.map((route) => (
@@ -18,8 +27,8 @@ function App() {
             />
           ))}
         </Routes>
-      </div>
-    </div>
+      </S_FlexWrapper>
+    </S_ApplicationWrapper>
   );
 }
 

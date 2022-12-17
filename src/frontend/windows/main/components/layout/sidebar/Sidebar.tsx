@@ -9,6 +9,44 @@ import imgSave from '../../../assets/images/icons/diskette-icon.png';
 import { useAppDispatch } from '../../../hooks/redux';
 import { changeFormValues } from '../../../redux/reducers/createCreatureReducer';
 import { createCreatureDefaultValues } from '../../../contants/hookFormConstants';
+import styled from '@emotion/styled';
+
+const S_Root = styled.div`
+  display: relative;
+  flex-basis: 200px;
+  flex-shrink: 0;
+  user-select: none;
+  ${(p) => p.theme.screens.md} {
+    margin-top: 32px;
+  }
+  @media print {
+    display: none;
+  }
+`;
+
+const S_AppTitle = styled.div`
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  font-family: ${(p) => p.theme.font.freestyle};
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 30px;
+  height: 125px;
+  white-space: nowrap;
+  ${(p) => p.theme.screens.md} {
+    text-align: left;
+    font-size: 90px;
+  }
+`;
+
+const S_Menu = styled.div`
+  margin: 90px auto 0;
+
+  ${(p) => p.theme.screens.md} {
+    margin-top: 200px;
+  }
+`;
 
 function Sidebar() {
   const dispatch = useAppDispatch();
@@ -51,14 +89,14 @@ function Sidebar() {
   ];
 
   return (
-    <div className={styles.root}>
-      <div className={styles.appTitle}>DnD Helper</div>
-      <div className={styles.menu}>
+    <S_Root>
+      <S_AppTitle>DnD Helper</S_AppTitle>
+      <S_Menu>
         {menuItems.map((menuElement) => (
           <Submenu key={menuElement.name} {...menuElement} />
         ))}
-      </div>
-    </div>
+      </S_Menu>
+    </S_Root>
   );
 }
 

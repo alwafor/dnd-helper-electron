@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@reduxjs/toolkit": "^1.9.1",
     "classnames": "^2.3.2",
     "electron-squirrel-startup": "^1.0.0",
@@ -53,8 +54,7 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.5.0",
-    "tss-react": "^4.4.5"
+    "react-router-dom": "^6.5.0"
   },
   "peerDependencies": {
     "webpack": "^5.0.0"

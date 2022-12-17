@@ -8,6 +8,7 @@ specifiers:
   '@electron-forge/maker-zip': ^6.0.4
   '@electron-forge/plugin-webpack': ^6.0.4
   '@emotion/react': ^11.10.5
+  '@emotion/styled': ^11.10.5
   '@reduxjs/toolkit': ^1.9.1
   '@types/node': ^18.11.15
   '@types/react': ^18.0.26
@@ -33,12 +34,12 @@ specifiers:
   tailwindcss: ^3.2.4
   ts-loader: ^9.2.2
   ts-node: ^10.0.0
-  tss-react: ^4.4.5
   typescript: ~4.5.4
   webpack: ^5.0.0
 
 dependencies:
   '@emotion/react': 11.10.5_kzbn2opkn2327fwg5yzwzya5o4
+  '@emotion/styled': 11.10.5_qvatmowesywn4ye42qoh247szu
   '@reduxjs/toolkit': 1.9.1_k4ae6lp43ej6mezo3ztvx6pykq
   classnames: 2.3.2
   electron-squirrel-startup: 1.0.0
@@ -47,7 +48,6 @@ dependencies:
   react-hook-form: 7.41.0_react@18.2.0
   react-redux: 8.0.5_yqqa5ithnjtlkxisuaub7c4kpa
   react-router-dom: 6.5.0_biqbaboplfbrettd7655fr4n2y
-  tss-react: 4.4.5_hp5f5nkljdiwilp4rgxyefcplu
 
 devDependencies:
   '@electron-forge/cli': 6.0.4
@@ -544,6 +544,12 @@ packages:
     resolution: {integrity: sha512-14FtKiHhy2QoPIzdTcvh//8OyBlknNs2nXRwIhG904opCby3l+9Xaf/wuPvICBF0rc1ZCNBd3nKe9cd2mecVkQ==}
     dev: false
 
+  /@emotion/is-prop-valid/1.2.0:
+    resolution: {integrity: sha512-3aDpDprjM0AwaxGE09bOPkNxHpBd+kA6jty3RnaEXdweX1DF1U3VQpPYb0g1IStAuK7SVQ1cy+bNBBKp4W3Fjg==}
+    dependencies:
+      '@emotion/memoize': 0.8.0
+    dev: false
+
   /@emotion/memoize/0.8.0:
     resolution: {integrity: sha512-G/YwXTkv7Den9mXDO7AhLWkE3q+I92B+VqAE+dYG4NGPaHZGvt3G8Q0p9vmE+sq7rTGphUbAvmQ9YpbfMQGGlA==}
     dev: false
@@ -584,6 +590,30 @@ packages:
 
   /@emotion/sheet/1.2.1:
     resolution: {integrity: sha512-zxRBwl93sHMsOj4zs+OslQKg/uhF38MB+OMKoCrVuS0nyTkqnau+BM3WGEoOptg9Oz45T/aIGs1qbVAsEFo3nA==}
+    dev: false
+
+  /@emotion/styled/11.10.5_qvatmowesywn4ye42qoh247szu:
+    resolution: {integrity: sha512-8EP6dD7dMkdku2foLoruPCNkRevzdcBaY6q0l0OsbyJK+x8D9HWjX27ARiSIKNF634hY9Zdoedh8bJCiva8yZw==}
+    peerDependencies:
+      '@babel/core': ^7.0.0
+      '@emotion/react': ^11.0.0-rc.0
+      '@types/react': '*'
+      react: '>=16.8.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@types/react':
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.20.6
+      '@emotion/babel-plugin': 11.10.5
+      '@emotion/is-prop-valid': 1.2.0
+      '@emotion/react': 11.10.5_kzbn2opkn2327fwg5yzwzya5o4
+      '@emotion/serialize': 1.1.1
+      '@emotion/use-insertion-effect-with-fallbacks': 1.0.0_react@18.2.0
+      '@emotion/utils': 1.2.0
+      '@types/react': 18.0.26
+      react: 18.2.0
     dev: false
 
   /@emotion/unitless/0.8.0:
@@ -6089,23 +6119,6 @@ packages:
   /tslib/2.4.1:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: true
-
-  /tss-react/4.4.5_hp5f5nkljdiwilp4rgxyefcplu:
-    resolution: {integrity: sha512-yKKwAuaTKyJf0R1Kn7o0T3RVw/Q3lufQQy2Cic2ZFiD1wnamjYCfPgDjQ44Wyk0lyVJGnTXHbUOwh7dhP5lTsA==}
-    peerDependencies:
-      '@emotion/react': ^11.4.1
-      '@emotion/server': ^11.4.0
-      react: ^16.8.0 || ^17.0.2 || ^18.0.0
-    peerDependenciesMeta:
-      '@emotion/server':
-        optional: true
-    dependencies:
-      '@emotion/cache': 11.10.5
-      '@emotion/react': 11.10.5_kzbn2opkn2327fwg5yzwzya5o4
-      '@emotion/serialize': 1.1.1
-      '@emotion/utils': 1.2.0
-      react: 18.2.0
-    dev: false
 
   /tsutils/3.21.0_typescript@4.5.5:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
