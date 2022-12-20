@@ -1,5 +1,5 @@
 body {
-  background: url('./assets/images/big/bg-texture.png');
+  background: url('../../assets/images/big/bg-texture.png');
   font-family: 'Bookman Old Style';
 }
 
@@ -9,33 +9,33 @@ body {
 
 @font-face {
   font-family: 'Bookman Old Style';
-  src: url('./assets/fonts/bookmanoldstyle.ttf') format('truetype');
+  src: url('../../assets/fonts/bookmanoldstyle.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Bookman Old Style';
-  src: url('./assets/fonts/bookmanoldstyle_italic.ttf') format('truetype');
+  src: url('../../assets/fonts/bookmanoldstyle_italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('./assets/fonts/Cuprum.ttf') format('truetype');
+  src: url('../../assets/fonts/Cuprum.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Cuprum';
-  src: url('./assets/fonts/Cuprum-Italic.ttf') format('truetype');
+  src: url('../../assets/fonts/Cuprum-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Freestyle Script';
-  src: url('./assets/fonts/freestylescript_regular.ttf') format('truetype');
+  src: url('../../assets/fonts/freestylescript_regular.ttf') format('truetype');
   font-weight: 400;
 }
 
