@@ -11,7 +11,7 @@ const sSidebar = css`
   border-right: 1px solid ${theme.colors.black};
   height: 100vh;
 
-  transition: margin-left 0.4s ease-in-out, flex-basis 0.4s ease-in-out;
+  transition: margin-left 0.4s ease-in-out;
   flex-basis: 264px;
 
   margin-left: 0px;
