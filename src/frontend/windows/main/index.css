@@ -39,6 +39,12 @@ body {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Fredericka';
+  src: url('../../assets/fonts/FrederickatheGreat-Regular.ttf');
+  font-weight: 400;
+}
+
 /* CSS RESET */
 html,
 body,
