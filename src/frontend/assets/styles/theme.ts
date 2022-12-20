@@ -3,6 +3,7 @@ export const theme = {
     bookman: 'Bookman Old Style, serif',
     cuprum: 'Cuprum, serif',
     freestyle: 'Freestyle Script, serif',
+    fredericka: 'Fredericka, serif',
   },
   colors: {
     black: 'black',
