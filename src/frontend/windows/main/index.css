@@ -1,45 +1,167 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 body {
-    /*background-color: #ffd862;*/
-    background: url("./assets/images/big/bg-texture.png");
-    padding: 0 15px;
-    font-family: 'Bookman Old Style';
+  background: url('./assets/images/big/bg-texture.png');
+  font-family: 'Bookman Old Style';
 }
+
 *::selection {
-    background-color: #9a9ad9;
+  background-color: #9a9ad9;
 }
 
 @font-face {
-    font-family: 'Bookman Old Style';
-    src: url("./assets/fonts/bookmanoldstyle.ttf") format('truetype');
-    font-weight: 400;
+  font-family: 'Bookman Old Style';
+  src: url('./assets/fonts/bookmanoldstyle.ttf') format('truetype');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Bookman Old Style';
-    src: url("./assets/fonts/bookmanoldstyle_italic.ttf") format('truetype');
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Bookman Old Style';
+  src: url('./assets/fonts/bookmanoldstyle_italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Cuprum';
-    src: url("./assets/fonts/Cuprum.ttf") format('truetype');
-    font-weight: 400;
+  font-family: 'Cuprum';
+  src: url('./assets/fonts/Cuprum.ttf') format('truetype');
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: 'Cuprum';
-    src: url("./assets/fonts/Cuprum-Italic.ttf") format('truetype');
-    font-weight: 400;
-    font-style: italic;
+  font-family: 'Cuprum';
+  src: url('./assets/fonts/Cuprum-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Freestyle Script';
-    src: url("./assets/fonts/freestylescript_regular.ttf") format('truetype');
-    font-weight: 400;
+  font-family: 'Freestyle Script';
+  src: url('./assets/fonts/freestylescript_regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+/* CSS RESET */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  height: 100%;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
